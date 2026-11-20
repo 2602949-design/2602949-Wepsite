@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sodais Hamid - Registration</title>
+</head>
+<body>
+
+    <!-- Top Navigation Menu -->
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="tables.html">Timetable</a> |
+        <a href="register.html">Register</a> |
+        <a href="media.html">Media</a>
+    </p>
+    <hr>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="form_result.html" method="get">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="name">1. Full Name:</label>
+            <input type="text" id="name" name="fullname" value="Sodais Hamid" required><br><br>
+
+            <label for="pass">2. Password:</label>
+            <input type="password" id="pass" name="password" maxlength="10" required><br><br>
+
+            <label for="mail">3. Email:</label>
+            <input type="email" id="mail" name="email" placeholder="sodais@example.com" required><br><br>
+
+            <label for="tel">4. Phone:</label>
+            <input type="tel" id="tel" name="phone" placeholder="0300-1234567"><br><br>
+
+            <label for="dob">5. Date of Birth:</label>
+            <input type="date" id="dob" name="dob"><br><br>
+
+            <label for="web">6. Website URL:</label>
+            <input type="url" id="web" name="website" placeholder="https://github.com"><br><br>
+
+            <label for="clr">7. Favorite Color:</label>
+            <input type="color" id="clr" name="color"><br><br>
+
+            <label>8. Gender:</label>
+            <input type="radio" id="m" name="gender" value="Male" checked>
+            <label for="m">Male</label>
+            <input type="radio" id="f" name="gender" value="Female">
+            <label for="f">Female</label>
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Academic Information</legend>
+
+            <label for="sem">9. Semester:</label>
+            <input type="number" id="sem" name="semester" min="1" max="8" value="1"><br><br>
+
+            <label for="rng">10. HTML Skill (0-100):</label>
+            <input type="range" id="rng" name="skill" min="0" max="100"><br><br>
+
+            <label for="pic">11. Upload Photo:</label>
+            <input type="file" id="pic" name="photo"><br><br>
+
+            <label>12. Subjects:</label>
+            <input type="checkbox" id="c1" name="sub1" value="ICT" checked>
+            <label for="c1">ICT</label>
+            <input type="checkbox" id="c2" name="sub2" value="PF">
+            <label for="c2">PF</label><br><br>
+
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option value="isb" selected>Islamabad</option>
+                <option value="lhr">Lahore</option>
+                <option value="khi">Karachi</option>
+            </select><br><br>
+
+            <label for="prog">Program:</label>
+            <input list="proglist" id="prog" name="program" placeholder="Choose program">
+            <datalist id="proglist">
+                <option value="BS Computer Science">
+                <option value="BS Software Engineering">
+            </datalist><br><br>
+
+            <label for="msg">About Yourself:</label><br>
+            <textarea id="msg" name="about" rows="3" cols="30">I am Sodais Hamid.</textarea>
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit in New Tab" formtarget="_blank">
+
+    </form>
+
+</body>
+</html>

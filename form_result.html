@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Result</title>
+</head>
+<body>
+    <h2>Data received by the server</h2>
+    <p>The browser sent these name = value pairs:</p>
+    <ul id="out"></ul>
+    <script>
+        const data = new URLSearchParams(location.search);
+        for (const [name, value] of data) {
+            const li = document.createElement("li");
+            li.textContent = name + " = " + value;
+            document.getElementById("out").appendChild(li);
+        }
+    </script>
+</body>
+</html>

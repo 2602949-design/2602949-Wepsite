@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sodais Hamid - Timetable</title>
+    <style>
+        #top-heading {
+            color: navy;
+            text-align: center;
+        }
+
+        .my-box {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 15px;
+            background-color: white;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 6px;
+        }
+    </style>
+</head>
+<body style="background-color: #f4f6f8;">
+
+    <!-- Top Navigation Menu -->
+    <p>
+        <a href="index.html">Home</a> |
+        <a href="tables.html">Timetable</a> |
+        <a href="register.html">Register</a> |
+        <a href="media.html">Media</a>
+    </p>
+    <hr>
+
+    <h1 id="top-heading">Sodais Hamid's <span style="color: green;">Timetable</span></h1>
+
+    <!-- First Div Box -->
+    <div class="my-box">
+        <h2>Weekly Timetable</h2>
+        <table>
+            <caption>My Class Schedule</caption>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>8:00 - 9:30</th>
+                    <th>9:30 - 11:00</th>
+                    <th>11:00 - 12:30</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday</td>
+                    <td colspan="2">ICT Lab (3 Hours)</td>
+                    <td>English</td>
+                </tr>
+                <tr>
+                    <td>Tuesday</td>
+                    <td>Calculus</td>
+                    <td rowspan="2">Programming</td>
+                    <td>Physics</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>Islamic Studies</td>
+                    <td>Free</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4">Timings may change during exams.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <!-- Second Div Box -->
+    <div class="my-box">
+        <h2>Steps to make a web page</h2>
+        <ol>
+            <li>Open VS Code.</li>
+            <li>Write HTML code.</li>
+            <li>Save as .html and open in browser.</li>
+        </ol>
+
+        <h2>My Courses</h2>
+        <ul>
+            <li>
+                ICT Lab
+                <ul>
+                    <li>HTML</li>
+                    <li>GitHub</li>
+                </ul>
+            </li>
+            <li>Programming Fundamentals</li>
+            <li>Calculus</li>
+        </ul>
+
+        <h2>HTML Terms</h2>
+        <dl>
+            <dt>HTML</dt>
+            <dd>Language used to make web pages.</dd>
+            <dt>Tag</dt>
+            <dd>Code inside angle brackets like &lt;p&gt;.</dd>
+            <dt>Link</dt>
+            <dd>Clickable text using the &lt;a&gt; tag.</dd>
+        </dl>
+
+        <p><a href="index.html">Back to Home</a></p>
+    </div>
+
+</body>
+</html>
